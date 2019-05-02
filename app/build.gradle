@@ -13,6 +13,7 @@ android {
         versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -35,8 +36,7 @@ dependencies {
     def retrofitInterceptor = "3.11.0"
     def glide = "4.9.0"
     def rxJava = "2.1.5"
-    def rxAndroid = "2.1.0"
-    def bottomNavigation = '2.1.0'
+    def rxAndroid = "2.1.1"
 
     /* Retrofit */
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
@@ -50,9 +50,6 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide"
     kapt "com.github.bumptech.glide:compiler:$glide"
     implementation "com.github.bumptech.glide:okhttp3-integration:$glide"
-
-    /* Bottom Navigation */
-    implementation "com.aurelhubert:ahbottomnavigation:$bottomNavigation"
 
     implementation 'com.google.firebase:firebase-core:16.0.8'
     implementation 'com.google.firebase:firebase-messaging:17.6.0'
